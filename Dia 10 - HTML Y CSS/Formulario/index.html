@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario - Censo</title>
+</head>
+<body>
+    <div id="title">
+    <h1>Censo - Ezequiel Vera</h1>
+    <h2>Un prototipo de formulario</h2>
+    </div>
+    <div id="form-real"></div>
+    <form id="formulario">
+
+        <div class="item-form">
+            <label class="placement">Nombre</label>
+            <input type="text" id="nombre-text" class="placement" placeholder="Poner Nombre"> 
+        </div>
+
+        <div class="item-form">
+            <label class="placement">Email</label>
+            <input type="text" id="email-text" class="placement" placeholder="Poner email">
+        </div>
+
+        <div class="item-form">
+            <label id="edad" class="placement">Edad</label>
+            <input type="number" class="placement" placeholder="Poner edad">
+        </div>
+
+        <div class="item-form">
+            <label id="provincia" class="placement">Provincia</label> 
+            <select class="placement">
+                <option value="santa-fe">Santa Fe</option>
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="rio-negro">Rio Negro</option>
+                <option value="formosa">Formosa</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Cap-fed">Capital Federal</option>
+                <option value="cordoba">Cordoba</option>
+            </select>
+        </div>
+
+        <div class="item-form">
+            <label id="personas" class="placement">Cantidad de personas con las que vives</label> 
+            <label> <input type="radio" class="edad-radio" >0 </label>
+            <label> <input type="radio" class="edad-radio" >1 </label>
+            <label> <input type="radio" class="edad-radio" >2 </label>
+            <label> <input type="radio" class="edad-radio" >Mas de 2 </label>
+        </div>
+
+        <div id="educacion" class="item-form">
+            <label id="educacion">Educacion Alcanzada</label>
+        <select class="placement" id="educacion-select"> 
+            <option value="Primario">Primario</option>
+            <option value="secundario">Secundario</option>
+            <option value="tercario">Terciario</option>
+            <option value="Universitario">Universitario</option>
+        </select>
+        </div>
+
+        <div id="economia" class="item-form">
+            <label id="economia" class="placement">¿Cuanto ganas mensualmente?</label>
+            <label> <input type="checkbox" class="edad-radio" >   X &lt; 30000 </label>
+            <label> <input type="checkbox" class="edad-radio" >   30000 &gt; X &lt; 45000 </label>
+            <label> <input type="checkbox" class="edad-radio" >   45000 &gt; X &lt; 60000 </label>
+            <label> <input type="checkbox" class="edad-radio" >   60000 &gt; X &lt; 85000 </label>
+            <label> <input type="checkbox" class="edad-radio" >   85000 &gt; X &lt; 10000 </label> 
+            <label> <input type="checkbox" class="edad-radio" >   X &gt; 10000 </label>
+        </div>
+        <div class="item-form" class="placement">
+            <label>Añadir Informacion Adicional</label>
+            <textarea class="placement" cols="30" rows="10" placeholder="Añadir informacion que se crea necesario..."></textarea>
+        </div>
+        <input type="button" value="Subir informacion">
+    </form>
+    </div>
+</body>
+</html>
