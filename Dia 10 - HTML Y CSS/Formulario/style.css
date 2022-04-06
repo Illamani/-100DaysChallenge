@@ -2,7 +2,7 @@
     text-align: center;
     margin: 20px 0px 20px 0px;
 }
-#formulario{
+#survey-form{
     margin: auto;
     width: 900px;
     text-align: center;
@@ -31,4 +31,10 @@ label{
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
+}
+
+
+.input-text{
+    width: 100%;
+    font-size: 1.25rem;
 }

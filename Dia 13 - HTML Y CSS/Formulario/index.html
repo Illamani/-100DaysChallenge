@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1 id="title" class="text-center">Censo Argentino simplificado</h1>
+        <p id="description" class="description text-center">Censo Argentino 2022, Argentina Avanza </p>
+    </header>
+    <form id="container">
+        <div class="form-group">
+            <label id="nombre" for="nombre">Nombre</label>
+            <input type="text" id="name" class="form-control" placeholder="Poner su nombre" required>
+        </div>
+        <div class="form-group">
+            <label id="apellido" for="apellido">Apellido</label>
+            <input type="text" id="text-apellido" class="form-control" placeholder="Poner su apellido" required>
+        </div>
+        <div class="form-group">
+            <label id="email" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Poner su email" required>
+        </div>
+        <div class="form-group">    
+            <label id="edad" for="edad">Edad</label>
+            <input type="number" name="edad" class="form-control" id="edad" placeholder="Poner su edad" min="0" max="99">
+        </div>
+        <div class="form-group">
+            <label for="provincia" id="provincia">¿De que provincia sos?</label>
+            <select id="dropdown" name="provincia" class="form-control" required>
+                <option disabled selected value>Seleccionar provincia</option>
+                <option>Capital Federal</option>
+                <option>Cordoba</option>
+                <option>Buenos Aires</option>
+                <option>Santa Fe</option>
+                <option>Corrientes</option>
+                <option>Santa Cruz</option>
+                <option>Jujuy</option>
+                <option>San Luis</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sueldo" id="sueldo">¿Cual es tu sueldo mensual?</label>
+            <label for="radio1">
+                <input type="radio" name="sueldo1" id="sueldo1" class="input-radio">
+                Menos de $35000
+            </label>
+            <label for="radio2">
+                <input type="radio" name="sueldo2" id="sueldo2" class="input-radio">
+                Entre $35000 y $50000
+            </label>
+            <label for="radio3">
+                <input type="radio" name="sueldo3" id="sueldo3" class="input-radio">
+                Entre $50000 y $80000
+            </label>
+            <label for="radio4">
+                <input type="radio" name="sueldo4" id="sueldo4" class="input-radio">
+                Mas de $80000
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Situacion Academica</label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Primario Incompleto
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Primario Completo
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Secundario Incompleto
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Secundario Completo
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Terciario Incompleto
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Terciario completo
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Universitario Incompleto
+            </label>
+            <label>
+                <input type="checkbox" class="input-checkbox"> Universitario Completo
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Añadir Informacion Adicional</p>
+            <textarea id="info-add" class="input-textarea" placeholder="Añadir Informacion Aqui"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
